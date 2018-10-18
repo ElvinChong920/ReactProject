@@ -4,9 +4,9 @@ export default class Welcome extends Component {
     render () {
         return (
             <Fragment>
-                <p>
+                <div>
                     Edit <code>src/App.js</code> and save to reload.
-                </p>
+                </div>
                 <a
                     className='App-link'
                     href='https://reactjs.org'

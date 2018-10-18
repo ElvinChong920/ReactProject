@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Welcome from '../Welcome/welcome';
+import Welcome from '../Welcome/Welcome';
+import TodoList from '../TodoList/TodoList';
 import logo from '../logo.svg';
+import '../Test/Test';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +12,10 @@ class App extends Component {
                 <header className='App-header'>
                     <img src={logo} className='App-logo' alt='logo' />
                 </header>
-                <Welcome />
+                <div className='App-layout'>
+                    <Welcome />
+                    <TodoList />
+                </div>
             </div>
         );
     }
