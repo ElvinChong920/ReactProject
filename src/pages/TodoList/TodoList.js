@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { addItem, deleteItem, fetchData } from '../../store/test/action';
 
 const mapStateToProps = state => {
-    return { items: state.items};
+    return { items: state.list.items};
 };
 
 const mapDispatchToProps = dispatch => {

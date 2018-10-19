@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "history": "^4.7.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
     "react-scripts": "2.0.5",
     "redux": "^4.0.1",
+    "redux-first-router": "^2.0.7",
+    "redux-first-router-link": "^1.4.2",
     "redux-thunk": "^2.3.0"
   },
   "scripts": {

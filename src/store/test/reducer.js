@@ -9,7 +9,7 @@ const initialState = {
     ],
 };
 
-const rootReducer = (state = initialState, action) => {
+const listReducer = (state = initialState, action) => {
     switch (action.type) {
     case ADD_ITEM : {
         return { ...state, items: [...state.items, { id: new Date(), title: action.title }]};
@@ -32,4 +32,4 @@ const rootReducer = (state = initialState, action) => {
     }
 };
 
-export default rootReducer;
+export default listReducer;
