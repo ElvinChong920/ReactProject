@@ -3,12 +3,12 @@ import './List.css';
 
 class List extends Component {
     render () {
-        const { items } = this.props;
+        const { items, onDeleteItem } = this.props;
         return (
             <ol>
                 {
                     items.map( (item, index) => (
-                        <li key={index}>
+                        <li key={index} onClick={()=>onDeleteItem(item.id)}>
                             { item.title }
                         </li>
                     ))

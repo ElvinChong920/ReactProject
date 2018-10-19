@@ -1,20 +1,19 @@
 import React, { Component, Fragment } from 'react';
 
 class Form extends Component {
-    constructor () {
-        super();
-        this.state = { value: '' };
-    }
+    state = { value: '' };
 
-    handleSubmit = () => {
-
+    onSubmit = input => {
+        const { onAddItem } = this.props;
+        onAddItem(input);
+        return this.setState({value: ''});
     }
 
     render () {
         return (
             <Fragment>
                 <input onChange={(e)=>this.setState({value: e.target.value})} value={this.state.value}/>
-                <button onClick={()=>this.handleSubmit()} >Add</button>
+                <button onClick={()=>this.onSubmit(this.state.value)}>Add</button>
             </Fragment>
         );
     }

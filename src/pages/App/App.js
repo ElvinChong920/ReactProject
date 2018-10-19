@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Welcome from '../Welcome/Welcome';
 import TodoList from '../TodoList/TodoList';
 import logo from '../logo.svg';
-import '../Test/Test';
 import './App.css';
 
 class App extends Component {
