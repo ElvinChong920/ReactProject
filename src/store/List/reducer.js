@@ -1,4 +1,4 @@
-import { ADD_ITEM, DELETE_ITEM, FETCH_DATA } from '../const';
+import { ADD_ITEM, DELETE_ITEM } from '../const';
 
 const initialState = {
     items : [
@@ -9,7 +9,7 @@ const initialState = {
     ],
 };
 
-const rootReducer = (state = initialState, action) => {
+const listReducer = (state = initialState, action) => {
     switch (action.type) {
     case ADD_ITEM : {
         return { ...state, items: [...state.items, { id: new Date(), title: action.title }]};
@@ -21,15 +21,9 @@ const rootReducer = (state = initialState, action) => {
             items: newItems
         };
     }
-    case FETCH_DATA : {
-        return {
-            ...state,
-            users: action.payload
-        };
-    }
     default:
         return state;
     }
 };
 
-export default rootReducer;
+export default listReducer;
