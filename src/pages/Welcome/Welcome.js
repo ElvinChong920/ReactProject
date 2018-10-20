@@ -4,6 +4,7 @@ export default class Welcome extends Component {
     render () {
         return (
             <Fragment>
+                <h3>Welcome</h3>
                 <div>
                     Edit <code>src/App.js</code> and save to reload.
                 </div>

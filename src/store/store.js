@@ -2,13 +2,16 @@ import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
 import listReducer from './List/reducer';
 import userReducer from './User/reducer';
 import thunk from 'redux-thunk';
+import queryString from 'query-string';
 import { connectRoutes } from 'redux-first-router';
 // import createHistory from 'history/createBrowserHistory';
 import { routesMap } from './Route/routesMap.js';
 
 // const history = createHistory();
 
-const { reducer, middleware, enhancer } = connectRoutes( routesMap );
+const { reducer, middleware, enhancer } = connectRoutes( routesMap, {
+    querySerializer: queryString
+} );
 const rootReducer = combineReducers({
     location: reducer,
     list: listReducer,
