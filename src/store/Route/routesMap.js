@@ -7,4 +7,8 @@ export const routesMap = {
         path: '/user',
         thunk: fetchData()
     },
+    USERDETAIL: {
+        path: '/userdetail/',
+        thunk: fetchData()
+    }
 };

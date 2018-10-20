@@ -4,7 +4,8 @@ import Welcome from '../Welcome/Welcome';
 import TodoList from '../TodoList/TodoList';
 import NotFound from '../NotFound/NotFound';
 import User from '../User/User';
-import { WELCOME, TODOLIST, USER } from '../../store/Route/routeNames';
+import UserDetail from '../UserDetail/UserDetail';
+import { WELCOME, TODOLIST, USER, USERDETAIL } from '../../store/Route/routeNames';
 import { connect } from 'react-redux';
 import { NOT_FOUND } from 'redux-first-router';
 import './PageRouter.css';
@@ -15,6 +16,7 @@ class PageRouter extends Component {
         [WELCOME]: <Welcome />,
         [TODOLIST]: <TodoList />,
         [USER]: <User />,
+        [USERDETAIL]: <UserDetail />,
         [NOT_FOUND]: <NotFound />
     };
 

@@ -2,7 +2,7 @@ import React, { PureComponent, Fragment } from 'react';
 import List from './components/List/List';
 import Form from './components/Form/Form';
 import { connect } from 'react-redux';
-import { addItem, deleteItem } from '../../store/list/action';
+import { addItem, deleteItem } from '../../store/List/action';
 
 const mapStateToProps = state => {
     return { items: state.list.items};
@@ -20,6 +20,7 @@ class TodoList extends PureComponent {
         const { items, onAddItem, onDeleteItem } = this.props;
         return (
             <Fragment>
+                <h3>To-do List</h3>
                 <List items={items} onDeleteItem={onDeleteItem}/>
                 <Form onAddItem={onAddItem} />
             </Fragment>
