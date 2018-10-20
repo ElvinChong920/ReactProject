@@ -1,4 +1,4 @@
-import { ADD_ITEM, DELETE_ITEM, FETCH_DATA } from '../const';
+import { ADD_ITEM, DELETE_ITEM } from '../const';
 
 const initialState = {
     items : [
@@ -19,12 +19,6 @@ const listReducer = (state = initialState, action) => {
         return {
             ...state,
             items: newItems
-        };
-    }
-    case FETCH_DATA : {
-        return {
-            ...state,
-            users: action.payload
         };
     }
     default:

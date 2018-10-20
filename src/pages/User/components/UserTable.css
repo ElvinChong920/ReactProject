@@ -1,0 +1,23 @@
+.User-table {
+    margin: auto;
+    padding: 8px 0px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(47, 141, 136);
+    color: white;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even){background-color: rgb(214, 255, 252);}
+
+tr:hover {background-color: #ddd;}

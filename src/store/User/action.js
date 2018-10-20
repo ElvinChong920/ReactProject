@@ -1,7 +1,4 @@
-import { ADD_ITEM, DELETE_ITEM, FETCH_DATA } from '../const';
-
-export const addItem = title => ({ type: ADD_ITEM, title });
-export const deleteItem = id => ({ type: DELETE_ITEM, id });
+import { FETCH_DATA } from '../const';
 
 export const fetchData = () => {
     return async dispatch => {
