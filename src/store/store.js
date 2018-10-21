@@ -7,6 +7,7 @@ import queryString from 'query-string';
 import { connectRoutes } from 'redux-first-router';
 // import createHistory from 'history/createBrowserHistory';
 import { routesMap } from './Route/routesMap.js';
+import pokemonReducer from './Pokemon/reducer';
 
 // const history = createHistory();
 
@@ -17,7 +18,8 @@ const rootReducer = combineReducers({
     location: reducer,
     title: titleReducer,
     list: listReducer,
-    user: userReducer
+    user: userReducer,
+    pokemon: pokemonReducer
 });
 const middlewares = applyMiddleware(middleware, thunk);
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

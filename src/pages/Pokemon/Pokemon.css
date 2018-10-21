@@ -1,0 +1,20 @@
+.Pokemon-container {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+}
+
+.Input-container {
+    display: flex;
+    justify-content: center;
+    min-height: 30px;
+    padding-bottom: 20px;
+}
+
+.Result-container {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
