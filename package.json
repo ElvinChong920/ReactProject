@@ -2,7 +2,7 @@
   "name": "react-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://elvinchong920.github.io/react-project",
+  "homepage": "https://elvinchong920.github.io/react-project",
   "dependencies": {
     "history": "^4.7.2",
     "query-string": "^6.2.0",
