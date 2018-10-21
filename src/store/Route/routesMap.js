@@ -1,4 +1,4 @@
-import { fetchData } from '../User/action';
+import { fetchData, fetchDetail,  } from '../User/action';
 
 export const routesMap = {
     WELCOME: '/',
@@ -8,7 +8,7 @@ export const routesMap = {
         thunk: fetchData()
     },
     USERDETAIL: {
-        path: '/userdetail/',
-        thunk: fetchData()
+        path: '/userdetail/:userId',
+        thunk: fetchDetail()
     }
 };

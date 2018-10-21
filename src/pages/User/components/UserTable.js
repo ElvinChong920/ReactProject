@@ -20,7 +20,7 @@ class UserTable extends PureComponent {
                     <tbody>
                         { data.map((user,index)=>(
                             <tr key={index} >
-                                <td><Link className='link' to={{ type: USERDETAIL, payload:  { query: { name: user.name } } }}>{user.name}</Link></td>
+                                <td><Link className='link' to={{ type: USERDETAIL, payload:  { userId: user.id } }}>{user.name}</Link></td>
                                 <td>{user.email}</td>
                                 <td>{user.company.name}</td>
                             </tr>
