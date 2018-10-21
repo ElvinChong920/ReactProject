@@ -1,8 +1,6 @@
-import { FETCH_DATA } from '../const';
+import { FETCH_DATA, FETCH_DETAIL, CLEAR_DETAIL } from '../const';
 
-const initialState = {
-    users : [],
-};
+const initialState = {};
 
 const listReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -10,6 +8,18 @@ const listReducer = (state = initialState, action) => {
         return {
             ...state,
             users: action.payload
+        };
+    }
+    case FETCH_DETAIL : {
+        return {
+            ...state,
+            userDetail: action.payload
+        };
+    }
+    case CLEAR_DETAIL: {
+        return {
+            ...state,
+            userDetail: undefined
         };
     }
     default:

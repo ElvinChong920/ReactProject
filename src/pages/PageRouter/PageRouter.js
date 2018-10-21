@@ -4,7 +4,7 @@ import Welcome from '../Welcome/Welcome';
 import TodoList from '../TodoList/TodoList';
 import NotFound from '../NotFound/NotFound';
 import User from '../User/User';
-import UserDetail from '../UserDetail/UserDetail';
+import UserDetail from '../User/UserDetail/UserDetail';
 import { WELCOME, TODOLIST, USER, USERDETAIL } from '../../store/Route/routeNames';
 import { connect } from 'react-redux';
 import { NOT_FOUND } from 'redux-first-router';

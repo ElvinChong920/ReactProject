@@ -13,6 +13,7 @@ class App extends Component {
                 <div className='App-layout'>
                     <PageRouter />
                 </div>
+                <div className='App-footer'>react-project</div>
             </div>
         );
     }

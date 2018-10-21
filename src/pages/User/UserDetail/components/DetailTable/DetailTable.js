@@ -3,13 +3,13 @@ import './DetailTable.css';
 
 class DetailTable extends PureComponent {
     render () {
-        const { data = '' } = this.props;
+        const { data } = this.props;
         return (
             <table className='Detail-table'>
                 <thead>
                     <tr>
-                        <th>Description</th>
-                        <th>Value</th>
+                        <th className='Header-desc'>Description</th>
+                        <th className='Header-value'>Value</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -28,6 +28,14 @@ class DetailTable extends PureComponent {
                     <tr>
                         <td>Website</td>
                         <td>{ data.website }</td>
+                    </tr>
+                    <tr>
+                        <td>Company</td>
+                        <td>{ data.company.name }</td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>{ data.address.city }</td>
                     </tr>
                 </tbody>
             </table>
