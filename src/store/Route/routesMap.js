@@ -1,4 +1,5 @@
-import { fetchData, fetchDetail,  } from '../User/action';
+import { fetchData, fetchDetail } from '../User/action';
+import { fetchPokemon } from '../Pokemon/action';
 
 export const routesMap = {
     WELCOME: '/',
@@ -10,5 +11,9 @@ export const routesMap = {
     USERDETAIL: {
         path: '/userdetail/:userId',
         thunk: fetchDetail()
+    },
+    POKEMON: {
+        path: '/pokemon',
+        thunk: fetchPokemon()
     }
 };

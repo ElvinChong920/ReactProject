@@ -1,0 +1,17 @@
+.Input-field {
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid rgb(211, 211, 211);
+    width: 40%;
+    padding-left: 8px;
+}
+
+.Search-button {
+    width: 20%;
+    text-decoration: none;
+    color: white;
+    background-color: lightseagreen;
+    border-radius: 0px 4px 4px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

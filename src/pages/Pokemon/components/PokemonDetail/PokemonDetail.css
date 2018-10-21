@@ -1,0 +1,8 @@
+.Left-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Pokemon-name {
+    font-weight: bold;
+}
