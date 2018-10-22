@@ -5,13 +5,15 @@ import './InputForm.css';
 
 class InputForm extends Component {
     state = {
-        name: ''
+        name: this.props.value || ''
     };
+
+    onEnter = key => (key==='Enter'? document.getElementsByClassName('Search-button')[0].click() : null );
 
     render () {
         return (
             <Fragment>
-                <input className='Input-field' onChange={(e)=>this.setState({name: e.target.value})} value={this.state.name} />
+                <input className='Input-field' onChange={(e)=>this.setState({name: e.target.value})} onKeyDown={(e)=>(this.onEnter(e.key))} value={this.state.name} />
                 <Link className='Search-button' to={{type:POKEMON, payload:{ query:this.state }}}>
                     Search
                 </Link>

@@ -10,11 +10,10 @@ class PokemonDetail extends PureComponent {
 
     render () {
         const { data } = this.props;
-        console.log(data);
         return (
             <Fragment>
                 <div className='Left-container'>
-                    <img src={data.sprites.front_default} onLoad={()=>(console.log('loading'))} alt={data.name} height='100px' width='100px'/>
+                    <img src={data.sprites.front_default} alt={data.name} height='100px' width='100px'/>
                     <div className='Pokemon-name'>{this.capitalizeFirstLetter(data.name)}</div>
                 </div>
                 <Chart data={data.stats} />

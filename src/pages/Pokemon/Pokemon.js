@@ -11,7 +11,7 @@ class Pokemon extends Component {
         return (
             <div className='Pokemon-container'>
                 <div className='Input-container'>
-                    <InputForm />
+                    <InputForm value={pokemon? pokemon.length !== 0 ? pokemon.name : null : null} />
                 </div>
                 <div className='Result-container'>
                     { pokemon? pokemon.length !== 0 ?

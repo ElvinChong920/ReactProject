@@ -4,8 +4,8 @@ import config from '../config';
 export const fetchPokemon = () => {
     return async (dispatch, getState) => {
         const query = getState().location.query;
-        dispatch({type: CLEAR_POKEMON });
         if (query && query.name) {
+            dispatch({type: CLEAR_POKEMON });
             dispatch({ type: IS_LOADING });
             const url = `${config.public.pokemonApiUrl}/${query.name.toLowerCase()}/`;
             try {
@@ -16,7 +16,7 @@ export const fetchPokemon = () => {
                 return dispatch({ type:GET_POKEMON, payload:[]});
             }
         } else {
-            return dispatch({type: 'initial'});
+            return dispatch({type: 'GET_DEFAULT'});
         }
     };
 };
