@@ -24,6 +24,7 @@ class PageRouter extends Component {
 
     render () {
         const { location } = this.props;
+        console.log(location);
         return (
             <Fragment>
                 <div className='Link-container'>
@@ -32,7 +33,7 @@ class PageRouter extends Component {
                     <Link className='Link' to={{type: USER}}>User</Link>
                     <Link className='Link' to={{type: POKEMON}}>Pokedex</Link>
                 </div>
-                {this.Pages[location.type]}
+                {/* {this.Pages[location.type]} */}
             </Fragment>
         );
     }

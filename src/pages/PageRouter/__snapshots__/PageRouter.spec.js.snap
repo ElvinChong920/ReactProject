@@ -1,0 +1,402 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Router should render without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PageRouter
+    dispatch={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="Link-container"
+      >
+        <Connect(Link)
+          className="Link"
+          to={
+            Object {
+              "type": "WELCOME",
+            }
+          }
+        >
+          Welcome
+        </Connect(Link)>
+        <Connect(Link)
+          className="Link"
+          to={
+            Object {
+              "type": "TODOLIST",
+            }
+          }
+        >
+          To-do List
+        </Connect(Link)>
+        <Connect(Link)
+          className="Link"
+          to={
+            Object {
+              "type": "USER",
+            }
+          }
+        >
+          User
+        </Connect(Link)>
+        <Connect(Link)
+          className="Link"
+          to={
+            Object {
+              "type": "POKEMON",
+            }
+          }
+        >
+          Pokedex
+        </Connect(Link)>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Connect(Link)
+            className="Link"
+            to={
+              Object {
+                "type": "WELCOME",
+              }
+            }
+          >
+            Welcome
+          </Connect(Link)>,
+          <Connect(Link)
+            className="Link"
+            to={
+              Object {
+                "type": "TODOLIST",
+              }
+            }
+          >
+            To-do List
+          </Connect(Link)>,
+          <Connect(Link)
+            className="Link"
+            to={
+              Object {
+                "type": "USER",
+              }
+            }
+          >
+            User
+          </Connect(Link)>,
+          <Connect(Link)
+            className="Link"
+            to={
+              Object {
+                "type": "POKEMON",
+              }
+            }
+          >
+            Pokedex
+          </Connect(Link)>,
+        ],
+        "className": "Link-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Welcome",
+            "className": "Link",
+            "to": Object {
+              "type": "WELCOME",
+            },
+          },
+          "ref": null,
+          "rendered": "Welcome",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "To-do List",
+            "className": "Link",
+            "to": Object {
+              "type": "TODOLIST",
+            },
+          },
+          "ref": null,
+          "rendered": "To-do List",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "User",
+            "className": "Link",
+            "to": Object {
+              "type": "USER",
+            },
+          },
+          "ref": null,
+          "rendered": "User",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Pokedex",
+            "className": "Link",
+            "to": Object {
+              "type": "POKEMON",
+            },
+          },
+          "ref": null,
+          "rendered": "Pokedex",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="Link-container"
+        >
+          <Connect(Link)
+            className="Link"
+            to={
+              Object {
+                "type": "WELCOME",
+              }
+            }
+          >
+            Welcome
+          </Connect(Link)>
+          <Connect(Link)
+            className="Link"
+            to={
+              Object {
+                "type": "TODOLIST",
+              }
+            }
+          >
+            To-do List
+          </Connect(Link)>
+          <Connect(Link)
+            className="Link"
+            to={
+              Object {
+                "type": "USER",
+              }
+            }
+          >
+            User
+          </Connect(Link)>
+          <Connect(Link)
+            className="Link"
+            to={
+              Object {
+                "type": "POKEMON",
+              }
+            }
+          >
+            Pokedex
+          </Connect(Link)>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Connect(Link)
+              className="Link"
+              to={
+                Object {
+                  "type": "WELCOME",
+                }
+              }
+            >
+              Welcome
+            </Connect(Link)>,
+            <Connect(Link)
+              className="Link"
+              to={
+                Object {
+                  "type": "TODOLIST",
+                }
+              }
+            >
+              To-do List
+            </Connect(Link)>,
+            <Connect(Link)
+              className="Link"
+              to={
+                Object {
+                  "type": "USER",
+                }
+              }
+            >
+              User
+            </Connect(Link)>,
+            <Connect(Link)
+              className="Link"
+              to={
+                Object {
+                  "type": "POKEMON",
+                }
+              }
+            >
+              Pokedex
+            </Connect(Link)>,
+          ],
+          "className": "Link-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Welcome",
+              "className": "Link",
+              "to": Object {
+                "type": "WELCOME",
+              },
+            },
+            "ref": null,
+            "rendered": "Welcome",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "To-do List",
+              "className": "Link",
+              "to": Object {
+                "type": "TODOLIST",
+              },
+            },
+            "ref": null,
+            "rendered": "To-do List",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "User",
+              "className": "Link",
+              "to": Object {
+                "type": "USER",
+              },
+            },
+            "ref": null,
+            "rendered": "User",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Pokedex",
+              "className": "Link",
+              "to": Object {
+                "type": "POKEMON",
+              },
+            },
+            "ref": null,
+            "rendered": "Pokedex",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
