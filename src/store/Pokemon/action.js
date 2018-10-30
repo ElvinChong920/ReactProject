@@ -1,5 +1,5 @@
 import { GET_POKEMON, CLEAR_POKEMON, IS_LOADING } from '../const';
-import config from '../config';
+import config from '../../config';
 
 export const fetchPokemon = () => {
     return async (dispatch, getState) => {

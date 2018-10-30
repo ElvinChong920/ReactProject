@@ -1,5 +1,5 @@
-import { WELCOME, TODOLIST, USER, USERDETAIL, POKEMON} from '../Route/routeNames';
-import { DEFAULTTITLE, WELCOMETITLE, TODOLISTTITLE, USERTITLE, USERDETAILTITLE, POKEMONTITLE } from './titleNames';
+import { WELCOME, TODOLIST, USER, USERDETAIL, POKEMON, REDUXFORM} from '../Route/routeNames';
+import { DEFAULTTITLE, WELCOMETITLE, TODOLISTTITLE, USERTITLE, USERDETAILTITLE, POKEMONTITLE, REDUXFORMTITLE } from './titleNames';
 
 const titleReducer = (state = DEFAULTTITLE, action = {}) => {
     switch (action.type) {
@@ -13,6 +13,9 @@ const titleReducer = (state = DEFAULTTITLE, action = {}) => {
         return `${USERDETAILTITLE} - ${action.payload.userName}`;
     case POKEMON: {
         return POKEMONTITLE;
+    }
+    case REDUXFORM: {
+        return REDUXFORMTITLE;
     }
     default:
         return state;

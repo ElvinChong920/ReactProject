@@ -4,3 +4,4 @@ export const TODOLISTTITLE = 'To-do List';
 export const USERTITLE = 'User';
 export const USERDETAILTITLE = 'User';
 export const POKEMONTITLE = 'Pokemon';
+export const REDUXFORMTITLE = 'Redux-form';

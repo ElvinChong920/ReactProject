@@ -15,5 +15,8 @@ export const routesMap = {
     POKEMON: {
         path: '/pokemon',
         thunk: fetchPokemon()
+    },
+    REDUXFORM: {
+        path: '/redux-form'
     }
 };

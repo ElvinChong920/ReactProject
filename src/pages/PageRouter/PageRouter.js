@@ -6,7 +6,8 @@ import NotFound from '../NotFound/NotFound';
 import Pokemon from '../Pokemon/Pokemon';
 import User from '../User/User';
 import UserDetail from '../User/UserDetail/UserDetail';
-import { WELCOME, TODOLIST, USER, USERDETAIL, POKEMON } from '../../store/Route/routeNames';
+import ReduxForm from '../ReduxForm/ReduxForm';
+import { WELCOME, TODOLIST, USER, USERDETAIL, POKEMON, REDUXFORM } from '../../store/Route/routeNames';
 import { connect } from 'react-redux';
 import { NOT_FOUND } from 'redux-first-router';
 import './PageRouter.css';
@@ -19,7 +20,8 @@ class PageRouter extends Component {
         [USER]: <User />,
         [USERDETAIL]: <UserDetail />,
         [NOT_FOUND]: <NotFound />,
-        [POKEMON]: <Pokemon />
+        [POKEMON]: <Pokemon />,
+        [REDUXFORM]: <ReduxForm />
     };
 
     render () {
@@ -31,6 +33,7 @@ class PageRouter extends Component {
                     <Link className='Link' to={{type: TODOLIST}}>To-do List</Link>
                     <Link className='Link' to={{type: USER}}>User</Link>
                     <Link className='Link' to={{type: POKEMON}}>Pokedex</Link>
+                    <Link className='Link' to={{type: REDUXFORM}}>Redux Form</Link>
                 </div>
                 {this.Pages[location.type]}
             </Fragment>

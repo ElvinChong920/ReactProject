@@ -5,6 +5,7 @@ import titleReducer from './Title/reducer';
 import thunk from 'redux-thunk';
 import queryString from 'query-string';
 import { connectRoutes } from 'redux-first-router';
+import { reducer as formReducer } from 'redux-form'
 // import createHistory from 'history/createBrowserHistory';
 import { routesMap } from './Route/routesMap.js';
 import pokemonReducer from './Pokemon/reducer';
@@ -19,7 +20,8 @@ const rootReducer = combineReducers({
     title: titleReducer,
     list: listReducer,
     user: userReducer,
-    pokemon: pokemonReducer
+    pokemon: pokemonReducer,
+    form: formReducer
 });
 const middlewares = applyMiddleware(middleware, thunk);
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
